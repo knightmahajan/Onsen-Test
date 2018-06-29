@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+
+<ons-page id="courses">
+    <ons-toolbar class="nav">
+        <div class="left">
+            <ons-back-button style="color: white">Back</ons-back-button>
+        </div>
+        <div class="center"> All Courses </div>
+        <div class="right">
+            <!-- <ons-toolbar-button onclick="show('.btnSearch')" class="btnSearch"> -->
+            <ons-toolbar-button  class="btnSearch">
+                <!-- <ons-icon icon="ion-search" style="font-size: 32px; width: 1em; padding-right:5px;"></ons-icon> -->
+                <i style="color: black; margin-right: 0.7em; font-size: 1.3em" class="zmdi zmdi-search" onclick="updateResult(this.value)"></i>
+            </ons-toolbar-button>
+                <!-- <input style="display: none" type="text" id="search" placeholder="Type to search"> -->
+            <i style="color: black; margin-right: 0.1em; font-size: 1.3em" class="zmdi zmdi-shopping-cart"></i>
+            <ons-search-input style="display: none; margin-right: 1em " id="searches" placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)" ></ons-search-input> 
+        </div>
+    </ons-toolbar>
+
+  <ons-tabbar swipeable position="auto" animation="slide">
+        <ons-tab page="all_courses.html" name="All" label="All" badge="68" active> </ons-tab>
+        <ons-tab page="online_courses.html" name="Online" label="Online" badge="54">  </ons-tab>
+        <ons-tab page="classroom_courses.html" name="Classroom" label="Classroom" badge="13">  </ons-tab> 
+  </ons-tabbar>
+   <!-- <ons-navigator id="mainNavigator" page="all_courses.html">  </ons-navigator> -->
+</ons-page>
+
+</body>
+</html>

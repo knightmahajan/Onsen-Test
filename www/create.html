@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="nav">
+        <div class="left">
+            <ons-back-button style="color: white">Back</ons-back-button>
+        </div>
+        <div class="center"> Sign Up</div>
+    </ons-toolbar> 
+
+   <img style="width: 100%; height: 100%" src="./images/main_background.png" />      
+      <div class="calls">
+        <p>
+          <i style="color: font-size: 1em" class="zmdi zmdi-account"> </i>&nbsp&nbsp
+          <ons-input class="password" modifier="underbar" placeholder="Name"  float></ons-input>
+        </p>
+
+       <p>
+         <i style="font-size: 1em" class="zmdi zmdi-email"></i>&nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="email" placeholder="Email" float></ons-input>
+      </p>
+
+      <p>
+         <i class="zmdi zmdi-lock"></i> &nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="pasword" placeholder="Password" float></ons-input>
+      </p>
+
+        <p>
+        <i class="zmdi zmdi-lock"></i> &nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="pasword" placeholder="Confirm Password" float></ons-input>
+      </p>
+
+      <p style="margin-top: 30px;">
+        <ons-button modifier="large" onclick="showModal()">  <i class="zmdi zmdi-sign-in"></i> REGISTER </ons-button>
+      </p>
+
+      <p style="margin-top: 20px;">
+        <ons-button modifier="large" onclick="goToChapter('login.html')">  Already Registered! Login Me </ons-button>
+      </p>
+
+  <ons-modal direction="up">
+  <div style="text-align: center">
+    <p>
+      <ons-icon icon="md-spinner" size="28px" spin></ons-icon> &nbsp
+       Validating........
+    </p>
+  </div>
+</div>
+  <!-- <ons-navigator id="mainNavigator" page="splitter.html">  </ons-navigator> -->
+</ons-modal>
+</ons-modal>
+  </ons-page>
+</body>
+</html>

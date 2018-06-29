@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/monaca-jquery/jquery.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/thumbs2.css" rel="stylesheet" />
+  <link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+  <script src="./js/thumbnail-slider.js" type="text/javascript"> </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/font_awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/material-design-ionic-font/css/material-design-ionic-font.min.css">
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/preloader.css">
+   <script src="./js/main.js"> </script>
+   <script src="./js/try.js"> </script>
+   
+</head>
+
+<body>
+
+  <div class="cssload-container">
+	  <div class="cssload-whirlpool"> </div>
+  </div>
+
+  <!-- <ons-modal var="modal">
+  <ons-icon icon="ion-load-c" spin="true"></ons-icon>
+  <br>
+  <br> Please wait.
+  <br>Closing in 2 seconds.
+</ons-modal> -->
+
+
+ <ons-navigator id="mainNavigator" page="splitter.html">  </ons-navigator>
+
+ <ons-template id="splitter.html">
+   <ons-page>
+    <ons-splitter id="mainSplitter" side="left"  swipeable collapse="portrait" width="200px" >
+      <ons-splitter-side page="menu.html" id="menu" side="left" width="260px"  height="9.2em" swipe-target-width="150px" collapse swipeable>  
+      </ons-splitter-side>
+      <ons-splitter-content id="content" page="home.html">
+      </ons-splitter-content>
+    </ons-splitter>
+   </ons-page>
+</ons-template>
+
+<!-- <script type="text/javascript">
+      fetch(' http://stage.api.mylearningcube.com/v1/coursetype').then(response => {
+  return response.json();
+}).then(data => {
+  // Work with JSON data here
+  console.log(JSON.stringify(data));
+}).catch(err => {
+  console.log('Error');
+});
+
+</script> -->
+
+
+
+
+<!-- <ons-template id="homePage.html">
+  <ons-page id="homePage">
+    <ons-navigator id="myNavigator" page="page1.html"></ons-navigator>
+  </ons-page>
+</ons-template>
+
+<ons-template id="page1.html">
+  <ons-page id="page1">
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">Home Page</div>
+    </ons-toolbar>
+
+    <p>This is the home page in the navigator.</p>
+    <ons-button id="push-button">Push Page 3</ons-button>
+  </ons-page>
+</ons-template>
+
+<ons-template id="page2.html">
+  <ons-page id="page2">
+    <ons-toolbar>
+      <div class="left"><ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+    <p>This is page 2 in the navigator still using the splitter.</p>
+    <ons-button onclick="fn.pop()">Pop Page</ons-button>
+  </ons-page>
+</ons-template>
+
+<ons-template id="page3.html">
+  <ons-page id="page3">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+    <p>This is page 3 in the navigator still using the splitter.</p>
+    <ons-button onclick="fn.open()">Open Menu</ons-button>
+  </ons-page>
+</ons-template> -->
+
+</body>
+</html>

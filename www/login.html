@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+   
+<ons-page>
+    <ons-toolbar class="nav">
+        <div class="left">
+          <ons-back-button style="color: white">Back</ons-back-button>
+        </div>
+        <div class="center"> Log In </div>
+    </ons-toolbar> 
+    <div class="content">
+      <img style="width: 100%;height: 100%" src="./images/main_background.png" alt="new" />
+        <div class="calls">
+          <p>
+            <i style="color: font-size: 1.5em" class="zmdi zmdi-account"> </i>&nbsp&nbsp
+            <ons-input id="user" class="password" type="text" float modifier = "underbar" placeholder="Username">  </ons-input> 
+          </p>
+
+          <p>
+            <i class="zmdi zmdi-lock"></i>&nbsp&nbsp
+            <ons-input id="pass" class="password" type="password" float modifier = "underbar" placeholder="Password"> </ons-input>
+          </p>
+
+          <p style="margin-top: 30px;">
+            <ons-button onclick="login()">  <i class="zmdi zmdi-sign-in"></i> LOGIN</ons-button> <br/> <br /> <br />
+          </p>
+            <div class="button-bar" style="background-color: #bfbfbf; width:280px;">
+                <div styl class="button-bar__item">
+                    <button class="button-bar__button" onclick="goToChapter('create.html')"> <p style="margin-top: 0; color: black">Create Account</p></button>
+                </div>
+                 <div class="button-bar__item">
+                    <button class="button-bar__button" onclick="goToChapter('forgot.html')"> <p style="margin-top: 0; color: black">Forgot Password</p></button>
+                </div>
+              </div>
+        </div>    
+  </div>
+</ons-page>
+
+</body>
+</html>

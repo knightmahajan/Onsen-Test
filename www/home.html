@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+    
+<ons-page id="pgHome"> 
+    <ons-toolbar class="nav">
+        <div class="left">
+            <ons-toolbar-button onclick="document.getElementById('mainSplitter').left.toggle();">
+                <ons-if platform="android">
+                    <ons-icon icon="md-menu" style="font-size: 20px;width: 1em"> </ons-icon>
+                </ons-if>
+                <ons-if platform="ios other">
+                    <ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em;"></ons-icon>
+                </ons-if>
+            </ons-toolbar-button>
+        </div>
+        <div class="right">  
+          <ons-toolbar-button onclick="show('.btnSearch')" class="btnSearch">
+              <i style="color: black; margin-right: 0.5em; font-size: 1.3em" class="zmdi zmdi-search"></i>
+          </ons-toolbar-button>
+          <i style="margin-right: 0.6em; font-size: 1.3em" class="zmdi zmdi-shopping-cart"></i> 
+        </div>
+    </ons-toolbar>
+
+<div>
+  <ons-carousel  id="carousel" swipeable="false" auto-scroll animation="ease-in" overscrollabe-width="" overscrollable class="carousel">
+    <ons-carousel-item>
+      <img class="images" src="./images/banner1.png" alt="pata ni" />
+    </ons-carousel-item>
+    <ons-carousel-item>
+      <img class="images" src="./images/banner2.png" alt="pata ni-2" />
+    </ons-carousel-item>
+    <ons-carousel-item>
+     <img class="images" src="./images/banner3.png" alt="pata ni-3" />
+    </ons-carousel-item>
+    <ons-carousel-item>
+     <img class="images" src="./images/banner4.png" alt="pata ni-4" />
+    </ons-carousel-item>
+  </ons-carousel> 
+</div>
+
+<h3 style="padding-left: 0.4em"> Best Selling Courses </h3><br />
+
+
+
+<!-- <ons-carousel width="auto" swipeable auto-scroll auto-scroll-ratio="0.2" animation="ease-in" overscrollable class="carousel1">
+    <ons-carousel-item>
+    <img class="car1" src="./images/banner1.png" /> 
+  </ons-carousel-item>
+  <ons-carousel-item>
+      <img class="car1  img-thumbnail" src="./images/banner2.png" />
+  </ons-carousel-item>
+  <ons-carousel-item>
+      <img class="car1  img-thumbnail" src="./images/banner3.png" />
+  </ons-carousel-item>
+  <ons-carousel-item>
+      <img class="car1  img-thumbnail" src="./images/banner4.png" />
+  </ons-carousel-item>
+</ons-carousel> -->
+
+<ons-row style="whitespace": nowrap>
+  <ons-carousel animation-options="fade">
+<div style="overflow-x: scroll">
+<ons-card style="width: 4em">
+    <img src="https://monaca.io/img/logos/download_image_onsenui_01.png" alt="Onsen UI" style="width: 30%">
+    <div class="title">
+      Awesome framework
+    </div>
+    <div class="content">
+      <ons-list>
+        <ons-list-header>Bindings</ons-list-header>
+        <ons-list-item>Vue</ons-list-item>
+        <ons-list-item>Angular</ons-list-item>
+        <ons-list-item>React</ons-list-item>
+      </ons-list>
+    </div>
+  </ons-card>
+</ons-row>
+
+<!-- <ons-carousel>
+<div style="overflow-x: scroll">
+<ons-card style="width: 4em">
+    <img src="https://monaca.io/img/logos/download_image_onsenui_01.png" alt="Onsen UI" style="width: 30%">
+    <div class="title">
+      Awesome framework
+    </div>
+    <div class="content">
+      <ons-list>
+        <ons-list-header>Bindings</ons-list-header>
+        <ons-list-item>Vue</ons-list-item>
+        <ons-list-item>Angular</ons-list-item>
+        <ons-list-item>React</ons-list-item>
+      </ons-list>
+    </div>
+  </ons-card> -->
+
+  <ons-card>
+    <img src="https://monaca.io/img/logos/download_image_onsenui_01.png" alt="Onsen UI" style="width: 100%">
+    <div class="title">
+      Awesome framework
+    </div>
+   
+    <div class="content">
+      <ons-list>
+        <ons-list-header>Bindings</ons-list-header>
+        <ons-list-item>Vue</ons-list-item>
+        <ons-list-item>Angular</ons-list-item>
+        <ons-list-item>React</ons-list-item>
+      </ons-list>
+    </div>
+  </ons-card>
+</div> 
+
+</ons-carousel>
+</ons-page>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+  <ons-page id="all_courses.html">    
+    <ons-row style="display: flex; direction: horizontal">
+      <ons-col>  
+    <ons-card style="position: relative; width: 8.8em; height: 16em">
+        <img src="https://monaca.io/img/logos/download_image_onsenui_01.png" alt="Onsen UI" style="position: absolute; top: 0; left: 0; width: 100%" /> <br /><br /><br />
+    <div class="content">
+      <ons-list>
+        <ons-list-item modifier="nodivider"> 
+          <p class="ps" onclick="fg()" style="position: absolute; width: 100%; font-size: 12px"> Title of the Course </p>
+        </ons-list-item>
+        <ons-list-item style="">      
+            <ons-radio class="radio" checked input-id="radio-1"></ons-radio>&nbspOnline  
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+          <!-- <ons-s
+              <button>Page 1</button>
+              <button>Page 2</button>
+          </ons-segment> -->
+           <ons-button style="position: absolute; left: 0; width: 100%"> <i style="color: #cccccc; font-size: 0.7em; text-transform: none; display: flex" class="zmdi zmdi-shopping-cart">| Add to Cart  </i> </ons-button>
+        </ons-list-item>
+      </ons-list>
+    </div>
+  </ons-card>
+</ons-col>
+
+<ons-col>
+  <ons-card class="onscard" style="position: relative; width: 8.8em; height: 16em">
+        <img class="imgs" src="https://monaca.io/img/logos/download_image_onsenui_01.png" alt="Onsen UI" style="position: absolute; top: 0; left: 0; width: 100%" /> <br /><br /><br />
+    <div class="content">
+      <ons-list class="onslist">
+        <ons-list-item class="onslistitem" modifier="nodivider"> 
+          <p id="two" onclick="fg()" style="position: absolute; width: 100%; font-size: 12px"> Title of the Course </p>
+        </ons-list-item>
+        <ons-list-item style="">      
+            <ons-radio checked input-id="radio-1"></ons-radio>&nbspOnline  
+        </ons-list-item>
+        <ons-list-item modifier="nodivider">
+          <!-- <ons-segment id="segment" style="width: 100%">
+              <button>Page 1</button>
+              <button>Page 2</button>
+          </ons-segment> -->
+           <ons-button onclick="jk()" style="width: 100%; height: 50%; text-transform: none"> <!-- <i style="color: #cccccc; font-size: 0.9em; text-transform: none; display: flex" class="zmdi zmdi-shopping-cart">| </i> -->Add to Cart  </ons-button>
+        </ons-list-item>
+      </ons-list>
+    </div>
+  </ons-card>
+</ons-col>
+
+
+<!-- <ons-col onmousemove="loki()"> -->
+<ons-col onload="loki()">
+</ons-col>
+
+
+</ons-col>
+
+  </ons-row>
+  </ons-page>
+</body>
+</html>

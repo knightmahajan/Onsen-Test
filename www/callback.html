@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="nav">
+        <div class="left">
+            <ons-back-button style="color: white">Back</ons-back-button>
+        </div>
+        <div class="center"> Request a Call Back </div>
+    </ons-toolbar> 
+
+  
+  <div class="content">
+    <img  style="width: 100%;height: 100%" src="./images/request_call_back_bg.png" />      
+      <div class="vouches">
+        <p>
+          <i style="color: font-size: 1em" class="zmdi zmdi-account"> </i>&nbsp&nbsp
+          <ons-input class="password" modifier="underbar" placeholder="Name"  float></ons-input>
+        </p>
+
+       <p>
+         <i style="font-size: 1em" class="zmdi zmdi-email"></i>&nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="email" placeholder="Email" float></ons-input>
+      </p>
+
+      <p>
+        <i style="font-size: 1em" class="zmdi zmdi-phone-in-talk"></i> &nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="tel"  minlength=12 maxlength=12 placeholder="Contact No" float></ons-input>
+      </p>
+
+      <p>
+        <i style="font-size: 1em" class="zmdi zmdi-assignment"></i>
+         <ons-select  class="password"  modifier="underbar" type="text" placeholder="PMP Feb 2018" float onchange="onsel(event)"> 
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+            <option> PMP Feb 2018 </option>
+         </ons-select>
+      </p>
+
+      <p>
+        <i style="font-size: 1em" class="zmdi zmdi-comment-text"></i>&nbsp&nbsp
+         <ons-input class="password" modifier="underbar" type="text" placeholder="Comment" float > </ons-input>
+      </p>
+
+      <!-- <p style="margin-top: 30px;">
+        <ons-button onclick="setTimeout(ons.notification.toast('Your Request has been recieved! One of our representors will contact you shortly', { timeout: 3000, animation: 'ascend' }) , 5000)">Submit </ons-button>
+      </p> -->
+
+      <p style="margin-top: 30px;">
+        <ons-button onclick="showModal()">  <i class="zmdi zmdi-sign-in"></i>  Submit </ons-button>
+      </p>
+
+<ons-modal direction="up">
+  <div style="text-align: center">
+    <p>
+      <ons-icon icon="md-spinner" size="28px" spin></ons-icon> 
+        Your Request has been recorded! <br />One of our representatives will contact you shortly!
+    </p>
+  </div>
+  </div>
+  <!-- <ons-navigator id="mainNavigator" page="splitter.html">  </ons-navigator> -->
+</ons-modal>
+      
+  
+  </ons-page>
+</body>
+</html>
